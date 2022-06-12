@@ -1,0 +1,12 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Node hello world.",
+  "main": "app.js",
+  "scripts": {},
+  "author": "Felipe Romero",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.14.31"
+  }
+}

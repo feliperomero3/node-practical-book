@@ -16,8 +16,9 @@ Cheers.
 
 1. Clone the project.
 1. Open a terminal in the root directory.
-1. Change to any directory (one self-contained project for each directory).
+1. Change to any root level directory (there is one self-contained project for each directory).
 1. Run `npm install` or `npm i`.
+1. Run `node src/app.js`.
 1. Open your web browser.
 
 ## License

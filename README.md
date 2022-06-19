@@ -25,6 +25,6 @@ Cheers.
 
 [MIT License](./LICENSE)
 
-Copyright (c) 2022 Felipe Romero
+Copyright &copy; 2022 Felipe Romero
 
 [1]: https://link.springer.com/book/10.1007/978-1-4842-3039-8

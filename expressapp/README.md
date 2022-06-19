@@ -10,7 +10,7 @@ npm install -g express-generator
 express --view=pug expressapp
 ```
 
-Then I modified it to use HTTPS.
+Then I modified it to use HTTPS. Required changes: `git diff 4755890..eae7167`
 
 ## Prerequisites
 

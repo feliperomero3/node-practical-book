@@ -10,7 +10,7 @@ npm install -g express-generator
 express --view=pug expressapp
 ```
 
-Then I modified it to use HTTPS. Required changes: `git diff 4755890..eae7167`
+Then I modified it to use HTTPS. [Required changes][2]
 
 ## Prerequisites
 
@@ -30,3 +30,4 @@ Then I modified it to use HTTPS. Required changes: `git diff 4755890..eae7167`
 1. Open your web browser at <https://127.0.0.1:8000/>.
 
 [1]: https://gist.github.com/feliperomero3/a6282b0e7ca579fff0e296227675190d
+[2]: https://github.com/feliperomero3/node-practical/commit/eae7167cce55460c7bad1650186a52b7b35efaa8

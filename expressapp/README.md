@@ -1,4 +1,4 @@
-# Express Skeleton HTTPS
+# Express App HTTPS
 
 Express Generator application skeleton using HTTPS instead of HTTP.
 

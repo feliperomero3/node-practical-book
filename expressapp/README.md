@@ -26,7 +26,7 @@ Then I modified it to use HTTPS. [Required changes][2]
 1. Generate a certificate (`server.crt`) with private key (`server.key`) in `expressapp` directory ([How-to][1])
 1. Run `npm install`.
 1. Run `DEBUG=expressapp:* npm start`.
-1. Or `$Env:DEBUG='expressapp:*'; npm start` on Powershell.
+1. Or `$Env:DEBUG='expressapp:*'; npm start` on PowerShell.
 1. Open your web browser at <https://127.0.0.1:8000/>.
 
 [1]: https://gist.github.com/feliperomero3/a6282b0e7ca579fff0e296227675190d

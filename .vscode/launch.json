@@ -6,12 +6,29 @@
   "configurations": [
     {
       "type": "node",
+      "name": "Attach",
+      "request": "attach",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "type": "node",
+      "name": "Launch via NPM",
       "request": "launch",
-      "name": "Launch Express App HTTPS",
+      "runtimeArgs": [
+        "run-script",
+        "debug"
+      ],
+      "runtimeExecutable": "npm",
+      "localRoot": "${workspaceFolder}\\expressapp",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}\\expressapp\\bin\\www"
+      "env": {
+        "DEBUG": "expressapp:*"
+      },
+      "console": "integratedTerminal"
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "name": "blogapp",
+  "version": "0.1.0-preview",
+  "description": "The node blog web application.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Felipe Romero",
+  "license": "MIT",
+  "repository": "https://github.com/feliperomero3/node-practical",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2",
+    "stylus": "^0.59.0"
+  }
+}

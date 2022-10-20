@@ -2,7 +2,7 @@
   "name": "blogapp",
   "version": "0.1.0-preview",
   "description": "The node blog web application.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app"
   },

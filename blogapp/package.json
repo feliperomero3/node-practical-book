@@ -4,7 +4,8 @@
   "description": "The node blog web application.",
   "main": "app.js",
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "debug": "node --inspect app"
   },
   "author": "Felipe Romero",
   "license": "MIT",

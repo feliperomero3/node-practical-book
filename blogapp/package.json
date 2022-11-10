@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app",
-    "debug": "node --inspect app"
+    "debug": "node --inspect app",
+    "test": "mocha"
   },
   "author": "Felipe Romero",
   "license": "MIT",

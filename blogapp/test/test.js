@@ -1,10 +1,10 @@
-const assert = require('chai').assert;
+const { expect } = require('chai');
 
 // https://mochajs.org/#getting-started
 describe('Array', () => {
   describe('#indexOf()', () => {
     it('should return -1 when the value is not present', () => {
-      assert.equal([1, 2, 3].indexOf(4), -1);
+      expect([1, 2, 3].indexOf(4)).to.equal(-1);
     });
   });
 });
@@ -18,12 +18,12 @@ describe('String', () => {
       current = 'a,b,c'.split(',');
     });
     it('should return an array', () => {
-      assert(Array.isArray(current));
+      expect(Array.isArray(current)).to.be.true; // jshint ignore:line
     });
     it('should return the same array', () => {
-      assert.equal(expected.length, current.length, `arrays have equal length`);
+      expect(expected.length).to.equal(current.length, `${expected.length} is not equal to ${current.length}`);
       for (let i = 0; i < expected.length; i++) {
-        assert.equal(expected[i], current[i], `i element is equal`);
+        expect(expected[i]).equal(current[i], `${i} element is not equal`);
       }
     });
   });

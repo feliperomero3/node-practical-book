@@ -1,4 +1,4 @@
-const assert = require('assert');
+const assert = require('chai').assert;
 
 // https://mochajs.org/#getting-started
 describe('Array', () => {

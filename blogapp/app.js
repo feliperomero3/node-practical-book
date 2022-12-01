@@ -22,3 +22,5 @@ app.all('*', (req, res) => {
 https.createServer(options, app).listen(app.get('port'), () => {
   console.log(`Express.js server is listening on port ${app.get('port')}`);
 });
+
+module.exports = app;

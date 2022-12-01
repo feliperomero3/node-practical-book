@@ -8,6 +8,9 @@
     "debug": "node --inspect app",
     "test": "mocha"
   },
+  "mocha": {
+    "slow": 2000
+  },
   "author": "Felipe Romero",
   "license": "MIT",
   "repository": "https://github.com/feliperomero3/node-practical",
@@ -19,6 +22,7 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "expect.js": "^0.3.1",
-    "mocha": "^10.1.0"
+    "mocha": "^10.1.0",
+    "supertest": "^6.3.1"
   }
 }

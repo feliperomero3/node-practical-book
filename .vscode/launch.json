@@ -11,7 +11,25 @@
     },
     {
       "type": "node",
-      "name": "Launch via NPM",
+      "name": "Launch blogapp via NPM",
+      "request": "launch",
+      "runtimeArgs": [
+        "run-script",
+        "debug"
+      ],
+      "runtimeExecutable": "npm",
+      "localRoot": "${workspaceFolder}\\blogapp",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "env": {
+        "DEBUG": "blogapp:*"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "name": "Launch expressapp via NPM",
       "request": "launch",
       "runtimeArgs": [
         "run-script",

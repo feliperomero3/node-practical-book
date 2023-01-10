@@ -1,2 +1,10 @@
-h1 Hello
-p= msg
+extends layout
+
+block page
+  - var menu = 'index'
+block content
+  | There's no published content yet.
+  |
+  a(href="/login") Log in
+  |
+  | to post and publish.

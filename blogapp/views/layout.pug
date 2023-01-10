@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= appTitle
+    script(type="text/javascript", src="jquery.min.js")
+    link(rel="stylesheet", href="css/bootstrap.min.css")
+    script(type="text/javascript", src="js/bootstrap.min.js")
+    link(rel="stylesheet", href="css/style.css")
+  body
+    #wrap
+      .container
+        h1.page-header= appTitle
+        p.lead Welcome to example from Express.js. Please enjoy.
+        block page
+        block header
+        block alert
+          div.alert.alert-warning.visually-hidden
+        .content
+          block content
+    block footer
+      footer
+        .container
+          p Copyright &copy; 2023

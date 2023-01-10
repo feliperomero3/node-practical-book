@@ -9,11 +9,16 @@ const options = {
 };
 
 let app = express();
+app.locals.appTitle = 'blog-express';
 
 app.set('appname', 'blogapp');
 app.set('port', process.env.PORT || 8000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
+app.use(express.static('public'));
+app.use(express.static('node_modules/jquery/dist'));
+app.use(express.static('node_modules/bootstrap/dist'));
 
 app.all('*', (req, res) => {
   res.render('index', { msg: 'Welcome to Practical Node.js!' });

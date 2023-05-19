@@ -12,9 +12,11 @@ html(lang="en")
     #wrap
       .container
         h1.page-header= appTitle
-        p.lead Welcome to example from Express.js. Please enjoy.
+        p.lead Welcome to blogapp from Express.js
         block page
         block header
+          div
+            include includes/menu
         block alert
           div.alert.alert-warning.visually-hidden
         .content

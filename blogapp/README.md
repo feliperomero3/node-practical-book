@@ -21,7 +21,7 @@ The Blog app consists of five main parts.
 1. Change to `blogapp` directory.
 1. Generate a certificate (`server.crt`) with private key (`server.key`) in `src` directory ([How-to][1])
 1. Run `npm install`.
-1. Run `npm start` or `node app.js`.
+1. Run `npm start`.
 1. Open your web browser at <https://localhost:8000/>.
 
 [1]: https://gist.github.com/feliperomero3/a6282b0e7ca579fff0e296227675190d

@@ -16,6 +16,7 @@ app.locals.articles = articles;
 
 app.set('appname', 'blogapp');
 app.set('port', process.env.PORT || 8000);
+app.set('host', process.env.HOST || 'localhost');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
@@ -34,8 +35,8 @@ app.get('/', (req, res) => {
   res.render('index', { msg: 'Welcome to Practical Node.js!' });
 });
 
-https.createServer(options, app).listen(app.get('port'), () => {
-  console.log(`Express.js server is listening on port ${app.get('port')}`);
+https.createServer(options, app).listen(app.get('port'), app.get('host'), () => {
+  console.log(`Express.js server is listening at https://${app.get('host')}:${app.get('port')}`);
 });
 
 module.exports = app;

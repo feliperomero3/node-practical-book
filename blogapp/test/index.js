@@ -9,4 +9,10 @@ describe('server', () => {
       expect(res.statusCode).to.be(200);
     });
   });
+  describe('login page', () => {
+    it('should respond to GET', async () => {
+      const res = await request(app).get('/login');
+      expect(res.statusCode).to.be(200);
+    });
+  });
 });

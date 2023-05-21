@@ -3,10 +3,10 @@
 The Blog app consists of five main parts.
 
 - A home page with a list of articles.
-- An individual article page with the full-text article
-- An admin page for publishing and removing content
-- A login page for accessing the aforementioned admin page
-- A post article page for adding new content
+- An individual article page with the full-text article.
+- An admin page for publishing and removing content.
+- A login page for accessing the aforementioned admin page.
+- A post article page for adding new content.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ The Blog app consists of five main parts.
 1. Clone the project.
 1. Open a terminal in the root directory.
 1. Change to `blogapp` directory.
-1. Generate a certificate `server.crt` with private key `server.key` in `src` directory ([How-to][1])
+1. Generate a certificate `server.crt` with private key `server.key` in `src` directory. ([How-to][1])
 1. Run `npm install`.
 1. Run `npm start`.
 1. Open your web browser at <https://localhost:8000/>.

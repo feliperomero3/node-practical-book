@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const https = require('https');
 const path = require('path');
+const morgan = require('morgan');
 
 const options = {
   key: fs.readFileSync(path.join(__dirname, 'server.key')),
@@ -23,6 +24,7 @@ app.set('view engine', 'pug');
 app.use(express.static('public'));
 app.use(express.static('node_modules/jquery/dist'));
 app.use(express.static('node_modules/bootstrap/dist'));
+app.use(morgan('dev'));
 
 app.get('/admin', (req, res, next) => {
   res.render('admin');

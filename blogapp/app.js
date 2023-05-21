@@ -24,6 +24,9 @@ app.use(express.static('public'));
 app.use(express.static('node_modules/jquery/dist'));
 app.use(express.static('node_modules/bootstrap/dist'));
 
+app.get('/admin', (req, res, next) => {
+  res.render('admin');
+});
 app.get('/post', (req, res, next) => {
   res.render('post');
 });
@@ -35,7 +38,7 @@ app.get('/articles/:slug', (req, res, next) => {
   res.render('article', article);
 });
 app.get('/', (req, res) => {
-  res.render('index', { msg: 'Welcome to Practical Node.js!' });
+  res.render('index');
 });
 
 https.createServer(options, app).listen(app.get('port'), app.get('host'), () => {

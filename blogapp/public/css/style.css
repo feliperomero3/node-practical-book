@@ -20,11 +20,15 @@ footer {
 }
 
 tr.unpublished {
-  color: #cec1c2;
+  color: #707070;
 }
 
 td.action {
   width: 20px;
+}
+
+.table .btn {
+  width: 100%;
 }
 
 .alert {

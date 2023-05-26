@@ -11,7 +11,7 @@ block content
       |
       a(href="/post") article.
     else
-      table.table.table-stripped
+      table.table.table-striped
         thead
           tr
             th(colspan="2") Actions
@@ -20,8 +20,16 @@ block content
           each article, index in articles
             tr(data-id=`${article.id}`, class=(!article.published)? "unpublished":"")
               td.action
-                button.btn.btn-danger.btn-sm.remove Remove
+                button.btn.btn-danger.btn-sm
+                  i.bi.bi-trash
+                  | Remove
               td.action
-                button.btn.btn-primary.btn-sm= (article.published)? "Unpublish" : "Publish"
+                button.btn.btn-primary.btn-sm
+                  if article.published
+                    i.bi.bi-arrow-left-circle
+                    | Unpublish
+                  else
+                    i.bi.bi-arrow-right-circle
+                    | Publish
               td= article.title
     script(type="text/javascript", src="/js/admin.js")

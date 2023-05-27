@@ -3,6 +3,7 @@ const fs = require('fs');
 const https = require('https');
 const path = require('path');
 const morgan = require('morgan');
+var favicon = require('serve-favicon');
 
 const options = {
   key: fs.readFileSync(path.join(__dirname, 'server.key')),
@@ -25,6 +26,7 @@ app.use(express.static('public'));
 app.use(express.static('node_modules/jquery/dist'));
 app.use(express.static('node_modules/bootstrap/dist'));
 app.use(express.static('node_modules/bootstrap-icons'));
+app.use(favicon('public/favicon.ico'));
 app.use(morgan('dev'));
 
 app.get('/admin', (req, res, next) => {

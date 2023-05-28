@@ -1,6 +1,6 @@
 # Practical node
 
-Inspired by the book [Practical Node.js - Building Real-World Scalable Web Apps Second Edition][1] plus other additions.
+Inspired by the book [Practical Node.js - Building Real-World Scalable Web Apps Second Edition][1] by Azat Mardan plus other additions.
 
 I come from a .NET background and I want to know a bit more of node (I find myself wondering if Angular is based in node).
 
@@ -10,14 +10,14 @@ Cheers.
 
 ## Prerequisites
 
-- Node.js 12.x
+- Node.js 14.x
 
 ## Getting started
 
 1. Clone the project.
 1. Open a terminal in the root directory.
 1. Change to any root level directory (there is one self-contained project for each directory).
-1. Run `npm install` or `npm i`.
+1. Run `npm install`.
 1. Run `node src/app.js`.
 1. Open your web browser.
 

@@ -5,6 +5,7 @@
   "author": "Felipe Romero",
   "license": "MIT",
   "repository": "https://github.com/feliperomero3/node-practical-book",
+  "type": "commonjs",
   "main": "app.js",
   "scripts": {
     "start": "node app",

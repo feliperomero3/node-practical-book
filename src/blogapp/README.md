@@ -24,6 +24,6 @@ The Blog app consists of five main parts.
 1. Run `npm start`.
 1. Open your web browser at <https://localhost:8000/>.
 
-![blogapp](../assets/blog-express.png)
+![blogapp](../../assets/blog-express.png)
 
 [1]: https://gist.github.com/feliperomero3/a6282b0e7ca579fff0e296227675190d
